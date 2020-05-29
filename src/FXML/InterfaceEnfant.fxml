@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Anc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="967.0" styleClass="bodybg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InterfaceEnfantController">
+   <children>
+      <TableView fx:id="Table" layoutX="67.0" layoutY="93.0" prefHeight="417.0" prefWidth="833.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="75.0" text="nom" />
+          <TableColumn fx:id="prenom" prefWidth="160.0" text="prenom" />
+            <TableColumn fx:id="sexe" prefWidth="78.0" text="sexe" />
+            <TableColumn fx:id="lieuN" prefWidth="89.0" text="lieuN" />
+            <TableColumn fx:id="DateN" prefWidth="160.0" text="DateN" />
+            <TableColumn fx:id="medicin" prefWidth="108.0" text="medicin" />
+            <TableColumn fx:id="NumMed" prefWidth="162.0" text="medicinNumero" />
+        </columns>
+      </TableView>
+      <Text layoutX="426.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kids List" wrappingWidth="114.78173828125">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Text>
+      <Button fx:id="retour" layoutX="807.0" layoutY="536.0" mnemonicParsing="false" onAction="#retour" text="retour">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="ajoutEnf" layoutX="67.0" layoutY="536.0" mnemonicParsing="false" onAction="#ajoutEnf" text="Add Child">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="ButtonRemove" layoutX="426.0" layoutY="536.0" mnemonicParsing="false" onAction="#ButtonRemove" text="Delete">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="SearchUpdate" layoutX="541.0" layoutY="536.0" mnemonicParsing="false" onAction="#SearchUpdate" text="Search and Update">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="BSMS" layoutX="249.0" layoutY="536.0" mnemonicParsing="false" onAction="#BSMS" text="Send SMS">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
